@@ -13,12 +13,15 @@
     <link rel="stylesheet" href="style.css">
 
 <style>
-    .canvas {
-        display: block;
-        width: 100%;
-        height: 100%;
-        margin: 1;
-    }
+   #canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;        /* Canvas berada di belakang */
+    pointer-events: none; /* Tidak ganggu klik tombol */
+}
 
     .aboutdescription {
         font-size: 1.15rem;
