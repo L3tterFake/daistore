@@ -51,6 +51,7 @@ html {
 body{
     background-image: url('https://i.pinimg.com/736x/7a/2f/5c/7a2f5c4ebcf3980af69c0041f5c152f9.jpg');
     overflow: hidden;
+    z-index: -2;
 }
 .preloader{
     position:fixed;
