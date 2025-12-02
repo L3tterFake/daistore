@@ -158,8 +158,8 @@ function Particle() {
         this.x += this.speedx;
         this.y += this.speedy;
 
-        if (this.x <= this.radius || this.x >= canvas.width - this.radius) this.speedx *= -1;
-        if (this.y <= this.radius || this.y >= canvas.height - this.radius) this.speedy *= -1;
+        if (this.x <= this.radius || this.x >= canvas.width - this.radius) this.speedx *= 3;
+        if (this.y <= this.radius || this.y >= canvas.height - this.radius) this.speedy *= 3;
 
         for (var j = 0; j < particle_count; j++) {
             let p2 = particles[j];
